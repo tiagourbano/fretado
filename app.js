@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();  
 var server = require('http').createServer(app);  
 var io = require('socket.io')(server);
+var port = process.env.PORT || 8080
 
 app.get("/", function(req, res) {
 	console.log("Home");
@@ -44,4 +45,4 @@ io.on('connection', function(client) {
 });
 
 
-server.listen(5000);  
+server.listen(port);  
