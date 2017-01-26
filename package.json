@@ -1,15 +1,11 @@
 {
   "name": "fretado",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Urbano",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
     "socket.io": "^1.7.2"
+  },
+  "engines": {
+    "node": ">=0.10.25"
   }
 }
